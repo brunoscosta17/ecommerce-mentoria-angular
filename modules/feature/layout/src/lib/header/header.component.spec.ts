@@ -28,5 +28,8 @@ describe('HeaderComponent', () => {
     expect(header.textContent).toBe(mockTitle);
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain(mockTitle);
+    component.title = 'New Title';
+    fixture.detectChanges();
+    expect(compiled.querySelector('h1').textContent).toContain('New Title');
   });
 });
