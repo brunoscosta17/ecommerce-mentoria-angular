@@ -26,7 +26,7 @@ describe('HeaderComponent', () => {
     const header: HTMLHeadingElement =
       fixture.nativeElement.querySelector('header');
     expect(header.textContent).toBe(mockTitle);
-    // const compiled = fixture.nativeElement;
-    // expect(compiled.querySelector('h1').textContent).toContain(mockTitle);
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain(mockTitle);
   });
 });
