@@ -81,5 +81,6 @@
       "style": "css"
     }
   },
-  "defaultProject": "ecommerce-mentoria-angular"
+  "defaultProject": "ecommerce-mentoria-angular",
+  "nxCloudAccessToken": "N2I0OWE5YWItZDI2ZS00YzM2LTk5OGItMmYyOTI5MDYyYWQzfHJlYWQtd3JpdGU="
 }

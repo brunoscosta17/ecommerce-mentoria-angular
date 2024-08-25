@@ -17,6 +17,9 @@
     "paths": {
       "@ecommerce-mentoria-angular/layout": [
         "modules/feature/layout/src/index.ts"
+      ],
+      "@ecommerce-mentoria-angular/product-data-access": [
+        "modules/data-access/product/src/index.ts"
       ]
     }
   },
