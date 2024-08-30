@@ -1,7 +1,7 @@
 {
     "{src,modules}/**/*.{js,ts,jsx,tsx,json,html,css,scss}": [
-        "nx affected:lint --base=lesson-6 --head=HEAD",
-        "nx affected:test --base=lesson-6 --head=HEAD",
+        "nx affected:lint --base=lesson-7 --head=HEAD",
+        "nx affected:test --base=lesson-7 --head=HEAD",
         "nx format:write --uncommitted"
     ]
 }
