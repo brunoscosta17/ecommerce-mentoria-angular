@@ -17,6 +17,14 @@
     ],
     "sharedGlobals": []
   },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nx/workspace/tasks-runners/default",
+      "options": {
+        "useDaemonProcess": true
+      }
+    }
+  },
   "targetDefaults": {
     "@angular-devkit/build-angular:application": {
       "cache": true,
