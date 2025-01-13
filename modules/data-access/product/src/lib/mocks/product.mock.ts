@@ -1,6 +1,6 @@
 import { Product } from '../models/product.model';
 
-export const productMock: Product[] = [
+export const productsMock: Product[] = [
   {
     createdAt: '2023-10-10T03:25:53.791Z',
     name: 'Oriental Cotton Chicken',

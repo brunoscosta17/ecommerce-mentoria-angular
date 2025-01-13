@@ -6,7 +6,7 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { Product } from '../../models/product.model';
-import { productMock } from '../../mocks/product.mock';
+import { productsMock } from '../../mocks/product.mock';
 
 describe('RecommendedProductsService', () => {
   let service: RecommendedProductsService;
@@ -34,8 +34,8 @@ describe('RecommendedProductsService', () => {
 
     // Assert
     const request = httpMock.expectOne(url);
-    request.flush(productMock);
+    request.flush(productsMock);
     expect(request.request.method).toBe('GET');
-    expect(result).toEqual(productMock);
+    expect(result).toEqual(productsMock);
   });
 });

@@ -6,7 +6,7 @@ import {
 import { provideHttpClient } from '@angular/common/http'; // Adicione esta linha
 import { ProductSearchService } from './product-search.service';
 import { Product } from '../../models/product.model';
-import { productMock } from '../../mocks/product.mock';
+import { productsMock } from '../../mocks/product.mock';
 
 describe('ProductSearchService', () => {
   let service: ProductSearchService;
@@ -44,8 +44,8 @@ describe('ProductSearchService', () => {
 
     // Assert
     const request = httpMock.expectOne(url);
-    request.flush(productMock);
+    request.flush(productsMock);
     expect(request.request.method).toBe('GET');
-    expect(result).toEqual(productMock);
+    expect(result).toEqual(productsMock);
   });
 });
