@@ -26,7 +26,7 @@ describe('RecommendedProductsService', () => {
 
   it('should return recommended products correctly', () => {
     // Arrange
-    const url = `${service.apiUrl}/products?page=1&limit=5`;
+    const url = `${service.apiUrl}/products?page=1&limit=8`;
     let result: Product[] = [];
 
     // Act
