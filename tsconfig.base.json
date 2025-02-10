@@ -24,6 +24,9 @@
       ],
       "@ecommerce-mentoria-angular/product-search": [
         "modules/feature/product/search/src/index.ts"
+      ],
+      "@ecommerce-mentoria-angular/product-ui": [
+        "modules/ui/product/src/index.ts"
       ]
     }
   },

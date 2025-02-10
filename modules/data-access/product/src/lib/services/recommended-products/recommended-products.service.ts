@@ -13,7 +13,7 @@ export class RecommendedProductsService {
 
   getProducts(): Observable<Product[]> {
     return this._http.get<Product[]>(`${this.apiUrl}/products`, {
-      params: { page: 1, limit: 5 },
+      params: { page: 1, limit: 8 },
     });
   }
 }
