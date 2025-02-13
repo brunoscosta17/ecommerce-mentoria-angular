@@ -37,7 +37,7 @@ describe('HomeComponent', () => {
   it('should render product cards correctly', () => {
     // Arrange
     const productCards: HTMLElement[] =
-      fixture.nativeElement.querySelectorAll('.product-card');
+      fixture.nativeElement.querySelectorAll('lib-product-card');
 
     // Assert
     expect(productCards.length).toBe(productsMock.length);

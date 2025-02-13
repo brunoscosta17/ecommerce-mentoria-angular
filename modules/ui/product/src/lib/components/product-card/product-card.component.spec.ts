@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ProductCardComponent } from './product-card.component';
+import { productsMock } from '@ecommerce-mentoria-angular/product-data-access';
 
 describe('ProductCardComponent', () => {
   let component: ProductCardComponent;
@@ -12,10 +13,17 @@ describe('ProductCardComponent', () => {
 
     fixture = TestBed.createComponent(ProductCardComponent);
     component = fixture.componentInstance;
+    component.product = productsMock[0];
     fixture.detectChanges();
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should render product card info correctly', () => {
+    const card: HTMLElement = fixture.nativeElement.querySelector('mat-card');
+    expect(card.textContent).toContain(component.product.name);
+    expect(card.textContent).toContain(component.product.price);
   });
 });
